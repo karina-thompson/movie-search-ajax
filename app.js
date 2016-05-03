@@ -10,7 +10,8 @@ var listMovies = function(data) {
 
 
 var searchMovies = function() { $.ajax({
-  url: 'http://www.omdbapi.com/?s=' + $('.movieSearch').val() 
+  url: 'http://www.omdbapi.com/?s=' + $('.movieSearch').val(),
+  method: 'get' 
 }).done(listMovies);
 };
   
